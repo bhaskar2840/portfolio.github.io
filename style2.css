@@ -1,0 +1,319 @@
+body{
+	margin:0px;
+}
+#body-header{
+	height:65vh;
+	opacity:1.2;
+	background-image:url(WIN_20190626_20_55_51_Pro.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed; 
+}
+.text-center{
+	text-align: center;
+}
+.horizontal-list{
+	list-style: none;
+	margin:0px;
+	padding-top: 20px;
+
+	padding-left: 10px;
+}
+.horizontal-list li{ 
+    display: inline-block;
+    margin:0px 18px 18px 0px;
+    font-size:1.5rem;
+
+
+ }
+.horizontal-list li a{
+	color:white;
+	text-decoration:none;
+
+}
+.horizontal-list li a:hover{
+	color:rgba(20,20,20,0.8);
+	transition: color 0.6s,border-bottom 4s;
+	text-decoration:none;
+	border-bottom:1px solid black;
+
+}
+#my-name{
+	font-size:3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom:0.5rem;
+}
+
+#about{
+height: auto;
+width:100%;
+position:relative;
+
+}
+#my-image{
+	height:12rem;
+	width:12rem;
+	margin:auto;
+	margin-top:-17vh;
+}
+#my-image img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+border:4px white;
+box-shadow: 1px 1px 10px 1px #AAAAAA;
+}
+.social-icons li a img{
+	
+	width:40px;
+	height:40px; 
+	padding:10px;
+	font-size: 1rem; 
+	border-radius: 50%;
+
+}
+.social-icons li a img:hover{
+
+
+	border-bottom: none;
+
+
+	box-shadow: 0px 0px 6px 4px yellow;
+}
+
+
+
+p{
+
+	text-align: center;}
+
+section{
+	width:100%;
+	display:flex;
+	flex-direction: column;
+
+}
+/*this is important we defined the content of each section and its color acc to the odd and even no*/
+section:nth-child(2n){background-color:white;
+
+}
+
+section:nth-child(2n+1){background-color:white;
+
+}
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	margin:10px auto;
+	font-weight: 400;
+
+}
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+
+}
+.mb75px{ margin-bottom: 75px; }
+
+
+
+.sdisplay{
+	  display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.skill-progress{
+	width: 15rem;
+	height: 2.0rem;
+	background-color: lightgrey;
+	border-radius:0.8rem;
+	border:2px solid black;
+	margin-bottom: 10px;
+	margin-right:20px;
+	margin-left: 30px; 
+	position: relative;
+}
+
+
+.skill-name span{
+	color:black;
+	font-size: 1.3rem;
+	margin-left: 30px;
+	overflow:auto;
+}
+/* >div will only consider the div which is inside the skill-progress will only be shown*/
+
+
+
+.skill-progress >div{
+	border-radius: 40px 0px 0px 40px;
+	box-shadow:0px 0px 2px 3px black; 
+
+
+}
+.p_score{
+	width:85%;
+	height:inherit;
+	background-color:orange; 
+ 
+}
+.p_score1{
+	width:65%;
+	height:inherit;
+	background-color:red; 
+ 
+}.p_score2{
+	width:95%;
+	height:inherit;
+	background-color:blue; 
+ 
+}.p_score3{
+	width:55%;
+	height:inherit;
+	background-color:pink; 
+ 
+}.p_score4{
+	width:85%;
+	height:inherit;
+	background-color:yellow; 
+ 
+}
+
+
+#form_color{
+	background:linear-gradient(70deg, orange 50%,red);
+}
+.formfilling{
+
+     left: 10%;
+    display:flex;
+    flex-direction:row;
+    align-items: left;
+    margin:20px 500px 10px 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.timeline{
+	position: relative;
+	left:10%;
+	width: 75%;
+	border:2px solid black;
+}
+.timeline-box{
+
+position: relative;
+margin:5px;
+width:40%;
+left:5%;
+min-height: 150px;
+border:2px solid black;
+
+
+}
+
+
+
+.timeline-box:nth-child(2n){
+
+	left:53%;
+}
+
+.timeline-divider{
+
+
+	position:absolute;
+	height:75%;
+	width:0;
+	border:3px dashed #0096fa6b;
+	top:10%;
+	left:50%;
+}
+
+
+
+
+
+
+
+
+.timeline-traveller{
+	position: sticky;
+	top: 25%;
+	transform:rotate(60deg);
+}
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	top:30%;
+	left:-11%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height:0.5rem;
+	background-color: red;
+	z-index:1;/* this is z index value that can be used to set the z axis position initial position is set to be 0. */
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top:30%;
+	left:111%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height:0.5rem;
+	background-color: red;
+	z-index:1;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+
+.timeline-divider{
+	left:5%;
+
+}
+
+.timeline-box{
+
+	left:12% !important;/* this thing here will give this a higher priority over any other thing
+	because if we not do so then we have the apply that same rule to the right child so by doing 
+	so we have given priority to the 
+	left of this container over any other*/
+
+    width: 80%;
+
+}
+ 
+/*
+.timline-box:nth-child(2n)::after{
+
+	left:-12%;
+}
+
+
+.timline-box:nth-child(2n+1)::after{
+
+	left:-12%;
+}*/     
+
+html{font-size: 15px;}
+.timeline-box::after{
+	left: -12% !important;
+}
+}
